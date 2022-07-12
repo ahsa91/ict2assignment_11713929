@@ -12,7 +12,8 @@
     "react-hook-form": "^3.29.4",
     "react-query": "^3.13.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1"
+    "react-scripts": "4.0.1",
+    "storybook": "^6.5.9"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006 -s public",
