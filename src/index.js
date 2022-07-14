@@ -95,9 +95,12 @@ const images = [
   "/rjBwhsOzHKUw2NIOrE7aMqjfe6s.jpg",
 ]
 
+const production_countries=["France","Lithuania"]
+
+
 const App = () => {
   return (
-      <MovieDetailsPage movie={sample} images={images} />
+      <MovieDetailsPage movie={sample} images={images} production_countries={production_countries}/>
       );
 };
 
