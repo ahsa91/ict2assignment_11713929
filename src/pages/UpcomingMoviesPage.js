@@ -4,6 +4,7 @@ import { useQuery } from 'react-query'
 import Spinner from '../components/spinner'
 import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
 import { upcomingMovies } from "../api/tmdb-api";
+import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 
 
 
@@ -30,7 +31,8 @@ const UpcomingMoviesPage = (props) => {
       title="Upcoming Movies"
       movies={movies}
       action={(movie) => {
-        return <AddToFavoritesIcon movie={movie} />
+        return <PlaylistAddIcon />
+        
       }}
     />
 );
