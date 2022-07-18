@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 export default function MovieCard({ movie, action }) {
   const classes = useStyles();
-  const { favorites} = useContext(MoviesContext);
+  const { favorites} = useContext(MoviesContext);// addToFavorites was removed from first curly braces
 
   if (favorites.find((id) => id === movie.id)) {
     movie.favorite = true;
