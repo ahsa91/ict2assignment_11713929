@@ -4,7 +4,7 @@ import { useQuery } from 'react-query'
 import Spinner from '../components/spinner'
 import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
 import { upcomingMovies } from "../api/tmdb-api";
-import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+// import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 
 
 
@@ -24,7 +24,7 @@ const UpcomingMoviesPage = (props) => {
   // Redundant, but necessary to avoid app crashing.
   const favorites = movies.filter(m => m.favorite)
   localStorage.setItem('favorites', JSON.stringify(favorites))
-  const addToFavorites = (movieId) => true 
+  // const addToFavorites = (movieId) => true 
 
   return (
     <PageTemplate
@@ -32,7 +32,7 @@ const UpcomingMoviesPage = (props) => {
       movies={movies}
       action={(movie) => {
         return <AddToFavoritesIcon movie={movie} />
-        return<PlaylistAddIcon/>
+        // return<PlaylistAddIcon/>
         
       }}
     />
