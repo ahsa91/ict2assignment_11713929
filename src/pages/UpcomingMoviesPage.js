@@ -10,7 +10,7 @@ import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 
 
 const UpcomingMoviesPage = (props) => {
-  const {  data, error, isLoading, isError }  = useQuery('discover', upcomingMovies)
+  const {  data, error, isLoading, isError }  = useQuery('upcoming', upcomingMovies)
 
   if (isLoading) {
     return <Spinner />
@@ -24,14 +24,14 @@ const UpcomingMoviesPage = (props) => {
   // Redundant, but necessary to avoid app crashing.
   const favorites = movies.filter(m => m.favorite)
   localStorage.setItem('favorites', JSON.stringify(favorites))
-  // const addToFavorites = (movieId) => true 
+  const addToFavorites = (movieId) => true 
 
   return (
     <PageTemplate
       title="Upcoming Movies"
       movies={movies}
       action={(movie) => {
-        // return <AddToFavoritesIcon movie={movie} />
+        return <AddToFavoritesIcon movie={movie} />
         return<PlaylistAddIcon/>
         
       }}
