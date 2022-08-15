@@ -2,7 +2,7 @@ import React from "react";
 import PageTemplate from "../components/templateMovieListPageSecond";
 import { useQuery } from 'react-query'
 import Spinner from '../components/spinner'
-import WatchListIcon from "@material-ui/icons/TheatersSharp";
+import AddToWatchListsIcon from '../components/cardIcons/addToWatchLists';
 import { getTopRated } from '../api/tmdb-api';
 // import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 
@@ -22,8 +22,8 @@ const TopRatedPage = (props) => {
   const movies = data.results;
 
   // Redundant, but necessary to avoid app crashing.
-  const favorites = movies.filter(m => m.favorite)
-  localStorage.setItem('favorites', JSON.stringify(favorites))
+  const watchList = movies.filter(m => m.watchList)
+  localStorage.setItem('watchlists', JSON.stringify(watchList))
   // const addToFavorites = (movieId) => true 
 
   return (
@@ -31,7 +31,7 @@ const TopRatedPage = (props) => {
       title="Top Rated Movies"
       movies={movies}
       action={(movie) => {
-        return <WatchListIcon movie={movie} />
+        return <AddToWatchListsIcon movie={movie} />
         // return<PlaylistAddIcon/>
         
       }}
