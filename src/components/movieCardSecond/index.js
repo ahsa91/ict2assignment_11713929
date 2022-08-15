@@ -92,10 +92,9 @@ export default function MovieCardSecond({ movie, action }) {
         </IconButton> */}
         <Button variant="outlined" size="medium" color="primary">
         <Link to={`/movies/${movie.id}`}>
-          <Button variant="outlined" size="medium" color="primary">
             More Info ...
-          </Button>
-        </Link>        </Button>
+        </Link>       
+         </Button>
       </CardActions>
     </Card>
   );
