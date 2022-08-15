@@ -1,8 +1,8 @@
 import React from "react";
-import PageTemplate from "../components/templateMovieListPage";
+import PageTemplate from "../components/templateMovieListPageSecond";
 import { useQuery } from 'react-query'
 import Spinner from '../components/spinner'
-import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
+import WatchListIcon from "@material-ui/icons/TheatersSharp";
 import { getTopRated } from '../api/tmdb-api';
 // import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 
@@ -31,7 +31,7 @@ const TopRatedPage = (props) => {
       title="Top Rated Movies"
       movies={movies}
       action={(movie) => {
-        return <AddToFavoritesIcon movie={movie} />
+        return <WatchListIcon movie={movie} />
         // return<PlaylistAddIcon/>
         
       }}
