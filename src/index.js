@@ -14,6 +14,9 @@ import MoviesContextProvider from "./contexts/moviesContext";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from 'react-query/devtools'
 import AddMovieReviewPage from './pages/addMovieReviewPage'
+import Login from './pages/login';
+import { UserContextProvider } from "./contexts/userContext";
+// import "./index.css";
 
 
 
@@ -35,6 +38,9 @@ const App = () => {
         <MoviesContextProvider>
             {" "}
             <Switch>
+              
+              <Route exact path="/movies/login" component={Login} />
+
               <Route exact path="/movies/watchlist" component={WatchListMoviesPage} />
               <Route exact path="/movies/nowplaying" component={NowPlayingPage} />
               <Route exact path="/movies/toprated" component={TopRatedPage} />
@@ -53,5 +59,13 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<App />, document.getElementById("root"));
 
+ReactDOM.render(
+  <React.StrictMode>
+    <UserContextProvider>
+      <App />
+    </UserContextProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
