@@ -1,23 +1,26 @@
 # Assignment - ReactJS app.
 
-Name: ... your name ...
+Name: Ahmad Sabeh-Murphy
 
 ## Overview.
 
 ...... State the app concept and objectives. If it's the Movies Fan app extension, only state the additional objectives .........
-
+I built upon the lab work made in class. 
+I added 4 new views(Now Playing, Top rated, Watchlist, and Login/Sign In)
+I targeted the GOOD grade band.
 
 ...... A bullet-point list of user features. If it's the Movies Fan app extension, only list new/modified features...... 
  
- + Feature 1
- + Feature 2
- + Feature 3
- + etc
- + etc
+ + Now playing view containing data from nowplaying api endpoint
+ + Top rated view containing data from top rated api endpoint
+ + watch list Icon in top rated view adds movies to the watchlist page(like favorite page)
+ + authentication for login/forgot password/
+ + routing/parameterized url for watch list page containing the ID of each
 
 ## Setup requirements.
 
-...... A brief explanation (to a third party) of any non-standard setup steps necessary to run your app/client locally (after cloning the repo) ........
+create firebase web project to add project config data in src\firebase\index.js
+install npm/ install storybook
 
 ## API Data Model.
 
