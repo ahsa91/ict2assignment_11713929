@@ -15,7 +15,7 @@ I targeted the GOOD grade band.
  + Top rated view containing data from top rated api endpoint
  + watch list Icon in top rated view adds movies to the watchlist page(like favorite page)
  + authentication for login/forgot password/
- + routing/parameterized url for watch list page containing the ID of each
+ + navigation & routing/parameterized url for watch list page containing the ID of each movie
 
 ## Setup requirements.
 
@@ -24,43 +24,31 @@ install npm/ install storybook
 
 ## API Data Model.
 
-..... [For non-Movies Fan app] Insert a diagram of the API's data model (see example below) AND/OR a sample(s) of the JSON documents returned by its endpoints ........
-
-![][model]
-
-......[For the Movies Fan app] Specify the additional TMDB endpoints used and show sample responses, in JSON .........
+in project file
 
 ## App Design.
 
 ### Component catalogue.
 
-....... Insert a screenshot from the Storybook UI showing your component catalogue. [For the Movies app, hi-light stories relating to new/modified components - see the example screenshot below] .......
-
-![][stories]
+in project file
 
 ### UI Design.
 
-...... Insert screenshots of the app's views, with appropriate captions (see example below). (For the Movies Fan App, only show the new/modified views) ........
-
-![][view]
->Shows detailed information on a movie. Clicking the 'Reviews' floating action button will display extracts from critic reviews.
+in project file
 
 ### Routing.
 
-...... Insert a list of the routes supported by your app and state the associated view. If relevant, specify which of the routes require authentication, i.e. protected/private. [For the Movies Fan app, only new routes should be listed.] ......... 
 
-+ GET /blogs - displays all published blogs.
-+ POST /blogs (protected) - add a new blog.
-+ GET /blogs/:id - displays a particular blog.
-+ GET /blogs/:id/comments (protected) - detail view of a particular blog and its comments.
-+ etc.
-+ etc.
+
++ GET /movies/login - displays login page.
++ POST /movies/watchlist- displays watch list
++ GET /movies/nowplaying- displays now playing blog.
++ GET /movies/toprated- displays top rated paged
 
 ## Independent learning (If relevant).
 
-....... Briefly state any technologies/techniques used in your project codebase that was not covered in the lectures/labs. Provide source code filename (source code excerpts are not required in most cases) references to support your assertions and include references (articles/blogs) ......... 
+Most of the code was refactored from lab work.
+Authentication via firebase was made through a tutorial:https://www.youtube.com/watch?v=14Nb3qPDtBQ&t=838s
+(source code in the video description)
 
 
-[model]: ./data.jpg
-[view]: ./view.png
-[stories]: ./storybook.png

@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../../contexts/userContext";
-import "../../index.css";
 
 const Signup = () => {
   const emailRef = useRef();

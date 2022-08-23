@@ -1,7 +1,6 @@
 import Auth from "../components/authentication/auth";
 import Dashboard from "../components/authentication/dashBoard";
 import { useUserContext } from "../contexts/userContext";
-import "../index.css";
 
 function Login() {
   const { user, loading, error } = useUserContext();

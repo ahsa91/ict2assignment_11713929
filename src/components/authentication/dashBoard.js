@@ -1,6 +1,5 @@
 import React from "react";
 import { useUserContext } from "../../contexts/userContext";
-import "../../index.css";
 
 const Dashboard = () => {
   const { user, logoutUser } = useUserContext();
