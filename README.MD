@@ -4,12 +4,11 @@ Name: Ahmad Sabeh-Murphy
 
 ## Overview.
 
-...... State the app concept and objectives. If it's the Movies Fan app extension, only state the additional objectives .........
+
 I built upon the lab work made in class. 
 I added 4 new views(Now Playing, Top rated, Watchlist, and Login/Sign In)
 I targeted the GOOD grade band.
 
-...... A bullet-point list of user features. If it's the Movies Fan app extension, only list new/modified features...... 
  
  + Now playing view containing data from nowplaying api endpoint
  + Top rated view containing data from top rated api endpoint
