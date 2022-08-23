@@ -30,7 +30,7 @@ install npm/ install storybook
 
 ### Component catalogue.
 
-![][view]
+![][stories]
 
 ### UI Design.
 
@@ -54,5 +54,5 @@ Authentication via firebase was made through a tutorial:https://www.youtube.com/
 
 
 [model]: ./data.jpg
-[view]: ./toprated.jpg
+[view]: ./toprated.JPG
 [stories]: ./storybook.png
