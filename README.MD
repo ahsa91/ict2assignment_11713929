@@ -52,3 +52,6 @@ Authentication via firebase was made through a tutorial:https://www.youtube.com/
 (source code in the video description)
 
 
+[model]: ./data.jpg
+[view]: ./view.png
+[stories]: ./storybook.png
