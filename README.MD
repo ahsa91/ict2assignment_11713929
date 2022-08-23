@@ -24,17 +24,18 @@ install npm/ install storybook
 
 ## API Data Model.
 
-in project file
+![][model]
 
 ## App Design.
 
 ### Component catalogue.
 
-in project file
+![][view]
 
 ### UI Design.
 
 in project file
+![][view]
 
 ### Routing.
 
@@ -53,5 +54,5 @@ Authentication via firebase was made through a tutorial:https://www.youtube.com/
 
 
 [model]: ./data.jpg
-[view]: ./view.png
+[view]: ./toprated.jpg
 [stories]: ./storybook.png
